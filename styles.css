@@ -1,0 +1,457 @@
+/* 在 CSS 文件中添加媒体查询，适配不同设备 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+h1 {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    /* 字体类型 */
+    font-size: 36px;
+    /* 字体大小 */
+    color: #5ba83f;
+    /* 颜色 */
+    text-align: center;
+    /* 居中对齐 */
+    margin-top: 20px;
+    /* 顶部外边距 */
+}
+
+body {
+    background: linear-gradient(to right, #E0F7FA, #F3E5F5);
+}
+/* 导航栏样式 */
+nav {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
+    top: 0;
+    /* 离页面顶部距离 */
+    z-index: 10;
+    /* 设置在页面最上层 */
+}
+
+/* 导航栏的UL样式 */
+nav ul {
+    list-style-type: none;
+    /* 去掉默认的列表样式 */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许导航项目换行 */
+    justify-content: center;
+    /* 水平居中 */
+    background-color: #333;
+    /* 背景颜色 */
+    border-radius: 8px;
+    /* 圆角边框 */
+    padding: 10px;
+    /* 增加内边距 */
+}
+
+/* 导航栏的LI样式 */
+nav ul li {
+    margin: 10px 20px;
+    /* 设置每个项目的间距 */
+    flex: 1 1 150px;
+    /* 设置每个项目的最小宽度为150px，允许自动换行 */
+}
+
+/* 链接样式 */
+nav ul li a {
+    font-family: 'Verdana', sans-serif;
+    /* 设置字体 */
+    color: white;
+    /* 链接文字颜色 */
+    text-decoration: none;
+    /* 去掉下划线 */
+    font-size: 15px;
+    /* 字体大小 */
+    padding: 10px 20px;
+    /* 增加内边距 */
+    background-color: #555;
+    /* 链接背景颜色 */
+    border-radius: 4px;
+    /* 圆角 */
+    transition: background-color 0.3s ease;
+    /* 背景颜色过渡效果 */
+    display: block;
+    /* 使链接区域更大 */
+    text-align: center;
+    /* 居中对齐 */
+}
+nav ul li a.active {
+    background-color: #4CAF50;
+    /* 当前页面导航项背景色 */
+    color: white;
+    /* 当前页面导航项字体颜色 */
+}
+/* 悬停效果 */
+nav ul li a:hover {
+    background-color: #4CAF50;
+    /* 悬停时的背景颜色 */
+    color: white;
+    /* 悬停时的文字颜色 */
+}
+/* 图片的基本样式 */
+.home1 {
+    width: 100%; /* 图片宽度设为100%，可以自动适应容器宽度 */
+    max-width: 600px; /* 设置图片最大宽度，避免图片过大 */
+    height: auto; /* 让图片高度根据宽度自动调整，保持比例 */
+    border: 2px solid #333; /* 添加边框，颜色为深灰 */
+    border-radius: 8px; /* 边框圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    display: block; /* 将图片设置为块级元素，方便控制 */
+    margin: 20px auto; /* 上下留白20px，水平居中显示 */
+}
+
+/* 悬停效果，用户将鼠标悬停在图片上时触发 */
+.home1:hover {
+    transform: scale(1.05); /* 鼠标悬停时稍微放大图片 */
+    transition: transform 0.3s ease; /* 平滑过渡效果 */
+}
+/* 图片的基本样式 */
+.home1 {
+    width: 100%;
+    /* 图片宽度设为100%，可以自动适应容器宽度 */
+    max-width: 600px;
+    /* 设置图片最大宽度，避免图片过大 */
+    height: auto;
+    /* 让图片高度根据宽度自动调整，保持比例 */
+    border: 2px solid #333;
+    /* 添加边框，颜色为深灰 */
+    border-radius: 8px;
+    /* 边框圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 添加阴影效果 */
+    display: block;
+    /* 将图片设置为块级元素，方便控制 */
+    margin: 20px auto;
+    /* 上下留白20px，水平居中显示 */
+}
+
+/* 悬停效果，用户将鼠标悬停在图片上时触发 */
+.home1:hover {
+    transform: scale(1.05);
+    /* 鼠标悬停时稍微放大图片 */
+    transition: transform 0.3s ease;
+    /* 平滑过渡效果 */
+}
+/* 段落 p 标签的基本样式 */
+.game-description-home {
+    text-indent: 2em;
+    /* 设置首行缩进，2em 为常用值，表示缩进的距离 */
+    font-weight: lighter;
+    font-family: 'Arial', sans-serif;
+    /* 设置字体 */
+    font-size: 16px;
+    /* 字体大小 */
+    color: #333;
+    /* 字体颜色 */
+    line-height: 1.6;
+    /* 行间距，增加文本的可读性 */
+    text-align: justify;
+    /* 两端对齐，文本更整齐 */
+    margin: 20px 10px;
+    /* 上下留白20px，左右10px的间距 */
+    padding: 10px;
+    /* 内边距，增加与边框的距离 */
+    background-color: #f9f9f9;
+    /* 设置背景颜色，浅灰色 */
+    border-left: 4px solid #4CAF50;
+    /* 给段落添加左侧的彩色边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
+    border-radius: 5px;
+    /* 圆角效果 */
+}
+
+/* 段落内的换行 br 标签 */
+.game-description-home br {
+    margin-bottom: 10px;
+    /* 增加换行后的间距 */
+}
+/* 第二个段落的样式 */
+.game-recommendation-home {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 20px;
+    max-width: 50%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 4px solid #333;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container-home {
+    display: flex;
+    align-items: center;
+    /* 让文字和图片垂直居中 */
+    justify-content: space-between;
+    /* 文字和图片两边对齐 */
+    margin: 20px auto;
+    max-width: 900px;
+    /* 设置容器最大宽度 */
+}
+/* 第二张图片的样式 */
+.home2 {
+    width: 100%;
+    max-width: 40%;
+    height: auto;
+    border: 2px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* 鼠标悬停在图片上的效果 */
+.home2:hover {
+    transform: scale(1.05);
+}
+/* 页脚样式 */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* 页脚中的导航样式 */
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+/* 为每个链接添加竖线 */ 
+.footer-nav a::after {
+    content: "|";
+    /* 使用竖线作为内容 */
+    color: white;
+    /* 设置竖线颜色为白色 */
+    margin-left: 8px;
+    /* 竖线与文字的间距 */
+}
+
+/* 移除最后一个链接的竖线 */
+.footer-nav a:last-child::after {
+    content: "";
+}
+.footer-nav a:hover {
+    color: #ff9900; /* 悬停时改变颜色 */
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+/* 设置文本和图片在同一水平面 */
+.text-image-background {
+    display: flex;
+    flex-direction: row-reverse;
+    /* 内容顺序反转 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    gap: 20px;
+    /* 设置文字和图片之间的间距 */
+    margin: 20px auto;
+    /* 上下留白，水平居中 */
+}
+
+/* 自定义文本样式 */
+.custom-text-background {
+    text-indent: 2em;
+    /* 设置首行缩进，2em 为常用值，表示缩进的距离 */
+    font-family: 'Arial', sans-serif;
+    /* 字体类型 */
+    font-size: 18px;
+    /* 字体大小 */
+    color: #391616fd;
+    /* 字体颜色 */
+    line-height: 1.6;
+    /* 行间距 */
+    max-width: 45%;
+    /* 最大宽度控制段落宽度 */
+    text-align: justify;
+    /* 两端对齐，使文本更整齐 */
+}
+
+/* 保持图片原始大小 */
+.custom-image-background {
+    max-width: 600px;
+    /* 设置图片的最大宽度，确保它不会太大 */
+    width: 100%;
+    height: auto;
+    /* 自动调整高度，保持原始比例 */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    text-align: left;
+    background-color: #fafafa;
+    /* 背景色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* 轻微阴影 */
+}
+table th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+.content-p{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+.title-b{
+    display: block;
+    /* 将 <b> 标签设置为块级元素，使其独占一行 */
+    font-size: 24px;
+    /* 设置较大的字体大小 */
+    font-weight: bold;
+    /* 加粗字体 */
+    color: #333;
+    /* 设置字体颜色 */
+    margin-top: 20px;
+    /* 增加上方间距 */
+    margin-bottom: 15px;
+    /* 增加下方间距 */
+    text-transform: uppercase;
+    /* 将文字转换为大写，增加标题效果 */
+    letter-spacing: 1px;
+    /* 增加字母间距 */
+    border-left: 4px solid #4CAF50;
+    /* 在左侧添加彩色边框 */
+    padding-left: 10px;
+    /* 给左侧内容增加间距，避免文字紧挨边框 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 轻微阴影 */
+}
+.p-features {
+    text-indent: 2em;
+    /* 设置首行缩进，2em 为常用值，表示缩进的距离 */
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    margin: 15px 0;
+    text-align: justify;
+    max-width: 750px;
+}
+.container-maps {
+    display: flex;
+    align-items: center;
+    /* 垂直居中对齐 */
+    gap: 20px;
+    /* 图片和描述之间的间距 */
+    margin: 20px auto;
+    max-width: 800px;
+    /* 容器的最大宽度 */
+}
+
+.container-maps img {
+    width: 100%;
+    max-width: 300px;
+    /* 控制图片的最大宽度 */
+    border-radius: 8px;
+    /* 圆角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
+}
+
+.container-maps .description-maps {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+}
+.p-maps {
+    font-size: 20px;
+    color: #4e4d4d;
+    line-height: 1.8;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    font-style: italic;
+    /* 增加斜体，使其看起来更像介绍性文字 */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 浅色背景 */
+    padding: 10px;
+    border-radius: 5px;
+    /* 圆角效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 轻微阴影效果 */
+}
+.review-p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    /* 浅色背景，提升可读性 */
+    border-left: 4px solid #4CAF50;
+    /* 左侧彩色边框，增加视觉引导 */
+    border-radius: 5px;
+    /* 圆角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 轻微阴影效果 */
+    font-family: 'Arial', sans-serif;
+}
+.p-items{
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.image-items {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
